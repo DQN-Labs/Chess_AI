@@ -1,19 +1,3 @@
-# Copyright 2019 DeepMind Technologies Limited
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-"""MCTS example."""
-
 import collections
 import random
 import sys
@@ -51,7 +35,7 @@ _KNOWN_PLAYERS = [
 
 flags.DEFINE_string("game", "chess", "Name of the game.")
 flags.DEFINE_enum("player1", "mcts", _KNOWN_PLAYERS, "Who controls player 1.")
-flags.DEFINE_enum("player2", "random", _KNOWN_PLAYERS, "Who controls player 2.")
+flags.DEFINE_enum("player2", "human", _KNOWN_PLAYERS, "Who controls player 2.")
 flags.DEFINE_string("gtp_path", None, "Where to find a binary for gtp.")
 flags.DEFINE_multi_string("gtp_cmd", [], "GTP commands to run at init.")
 flags.DEFINE_string("az_path", None,
