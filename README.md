@@ -11,10 +11,9 @@ A simple code to make a chess engine using Reinforcement Learning by utilizing t
 - numpy
 
 #### They can be installed using this command:
-
-'''
+```
 pip install openspiel numpy pyspiel
-'''
+```
 
 
 
